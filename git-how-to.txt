@@ -36,7 +36,7 @@ git push -u origin master
 
 pushd /home/hanno/erprobe/git-how-to
 # Erzeuge neue Dateien, oder bearbeite vorhandene, z.B. git-how-to
-git add git-how-to 
+git add git-how-to.txt 
 git commit -m second
 git push -u origin master
 
