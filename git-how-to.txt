@@ -18,8 +18,10 @@
 # commit
 # push
 
-git config --global credential.helper cache
+git config --global credential.helper cache   # timeout 15 min
 git config --global credential.helper 'cache --timeout=36000'
+git config --unset credential.helper          # erfrage die Credentials wieder
+git config --global --get-all credential.helper # find out your current values
 
 pushd /home/hanno/erprobe
 mv git-how-to/ git-how-to.v00
@@ -33,7 +35,7 @@ git push -u origin master
 # Arbeite am Verzeichnis
 
 pushd /home/hanno/erprobe/git-how-to
-# Erzeuge neue Dateien, z.B. git-how-to
+# Erzeuge neue Dateien, oder bearbeite vorhandene, z.B. git-how-to
 git add git-how-to 
 git commit -m second
 git push -u origin master
