@@ -30,6 +30,14 @@ git add .
 git commit -m "first commit"
 git push -u origin master
 
+# Arbeite am Verzeichnis
+
+pushd /home/hanno/erprobe/git-how-to
+# Erzeuge neue Dateien, z.B. git-how-to
+git add git-how-to 
+git commit -m second
+git push -u origin master
+
 ################
 pushd /data6/home/hanno/dynamische-adressen-ohne-make/
 git clone https://github.com/gerdkolano/update-dns.git
@@ -54,4 +62,27 @@ git push -u origin master
 
 
 exit 0
+
+
+###############
+
+[master d884476] first commit
+ Committer: zoe-hanno <hanno@zoe>
+Ihr Name und E-Mail Adresse wurden automatisch auf Basis
+Ihres Benutzer- und Rechnernamens konfiguriert. Bitte prüfen Sie, dass
+diese zutreffend sind. Sie können diese Meldung unterdrücken, indem Sie
+diese explizit setzen. Führen Sie dazu das folgende Kommando aus und folgen
+Sie den Anweisungen in Ihrem Editor, um die Konfigurationsdatei zu bearbeiten:
+
+    git config --global --edit
+
+Nachdem Sie das getan haben, können Sie Ihre Identität für diesen Commit
+ändern mit:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 57 insertions(+)
+ create mode 100644 git-how-to.txt
+
+https://gerdkolano@github.com
 
